@@ -1,0 +1,81 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#creative</title>
+
+    <link rel="stylesheet" href="css.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="display-limiter">
+        <div class="tablet-container">
+            <header>
+                <p>NOTEBOOK</p>
+                <p>VEHICLE PERFORMANCE MOBILE</p>
+            </header>
+            <section>
+                <div class="values-field">
+                    <div class="field-area">
+                        <div class="text">
+                            <label for="boost">FORÇA DO MOTOR</label>
+                            <p class="value"></p>
+                        </div>
+                        <input type="range" id="boost" class="styled-slider slider-progress" min="0.1" max="0.30" value="0.25" step="0.01">
+                    </div>
+
+                    <div class="field-area">
+                        <div class="text">
+                            <label for="curve">FORÇA NAS CURVAS</label>
+                            <p class="value"></p>
+                        </div>
+                        <input type="range" id="curve" class="styled-slider slider-progress" min="20.0" max="25.0" value="22.5" step="0.01">
+                    </div>
+
+                    <div class="field-area">
+                        <div class="text">
+                            <label for="lowspeed">TRAÇÃO EM BAIXA VELOCIDADE</label>
+                            <p class="value"></p>
+                        </div>
+                        <input type="range" id="lowspeed" class="styled-slider slider-progress" min="0.1" max="0.5" value="0.3" step="0.01">
+                    </div>
+
+                    <div class="field-area">
+                        <div class="text">
+                            <label for="trafront">TRAÇÃO DIANTEIRA</label>
+                            <p class="value"></p>
+                        </div>
+                        <input type="range" id="trafront" class="styled-slider slider-progress" min="0.28" max="0.68" value="0.48" step="0.01">
+                    </div>
+
+                    <div class="field-area">
+                        <div class="text">
+                            <label for="clutchup">TROCA DE MARCHAS MAIORES</label>
+                            <p class="value"></p>
+                        </div>
+                        <input type="range" id="clutchup" class="styled-slider slider-progress" min="5.0" max="9.0" value="7.0" step="0.01">
+                    </div>
+
+                    <div class="field-area">
+                        <div class="text">
+                            <label for="clutchdown">TROCA DE MARCHAS MENORES</label>
+                            <p class="value"></p>
+                        </div>
+                        <input type="range" id="clutchdown" class="styled-slider slider-progress" min="4.0" max="8.0" value="6.0" step="0.01">
+                    </div>
+                </div>
+                <div class="button-field">
+                    <button id="savebtn">Salvar</button>
+                    <button id="defaultbtn">Padrão</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="jquery.js"></script>
+</body>
+
+</html>
