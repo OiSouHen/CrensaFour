@@ -77,7 +77,7 @@ function cRP.newCharacter(name,name2,sex,locate)
 			return
 		end
 
-		vRP.execute("characters/createCharacters",{ steam = steam, name = name, name2 = name2, locate = locate, phone = vRP.generatePhone() })
+		vRP.execute("characters/createCharacters",{ steam = steam, name = name, name2 = name2, locate = locate, phone = vRP.generatePhone(), blood = math.random(4) })
 
 		local consult = vRP.query("characters/lastCharacters",{ steam = steam })
 		if consult[1] then
